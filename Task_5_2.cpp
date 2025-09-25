@@ -3,8 +3,9 @@
 using namespace std;
 
 int main() {
-    bool isIncorrect;
     double x, y;
+    bool isIncorrect;
+    bool val = (x > y);
     cout << "Введите X и Y: ";
     do {
         isIncorrect = false;
@@ -16,7 +17,10 @@ int main() {
             isIncorrect = true;
         }
     } while (isIncorrect);
-    bool val = (x > y);
-    std::cout << (val ? x : y) << std::endl;
-    return 0;
+    if (val) {
+        cout << x << endl;
+    } else {
+        cout << y << endl;
+    }
 }
+

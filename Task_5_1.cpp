@@ -16,7 +16,10 @@ int main() {
             isIncorrect = true;
         }
     } while (isIncorrect);
-    std::cin >> x >> y;
-    std::cout << ((x > y) ? x : y) << std::endl;
+    if (x > y) {
+        cout << x << endl;
+    } else {
+        cout << y << endl;
+    }
     return 0;
 }
